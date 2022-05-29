@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  padding: 20vh 0;
+  background-color: hsl(217, 54%, 11%);
+}
+.container {
+  width: 25%;
+  margin: auto;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 20px;
+}
+.image {
+  position: relative;
+  width: 100%;
+}
+.equilibrium-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsl(178, 100%, 50%);
+}
+.image:hover .overlay {
+  opacity: 0.5;
+}
+.view-icon {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+h1:hover,
+strong:hover {
+  color: hsl(178, 100%, 50%);
+}
+h2 {
+  display: inline-block;
+  /* justify-self: center; */
+  vertical-align: middle;
+
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+}
+.icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+p {
+  margin-top: 10px;
+  display: inline-block;
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+.flex-box {
+  display: flow-root;
+}
+.balance {
+  float: left;
+}
+.time {
+  float: right;
+}
+.time p,
+h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.time p {
+  font-size: 15px;
+}
+.time .icon {
+  margin-right: 5px;
+}
+
+.footer {
+  margin-top: 10px;
+  border-top: solid 1px hsl(215, 32%, 27%);
+  padding: 10px 0 0;
+}
+strong {
+  font-weight: 300;
+  color: white;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 75%;
+  }
+}
